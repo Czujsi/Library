@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class LibraryBorrowABookTest {
     @Test
-    void BorrowingABook() {
+    public void BorrowingABook() {
         //given
         Library tomLibrary = new Library();
         tomLibrary.addBook(new Book("Dzieci z Bullerbyn", "Astrid Lindgren", 4, "9788310104748"));
@@ -20,7 +20,7 @@ class LibraryBorrowABookTest {
     }
 
     @Test
-    void whenBorrowingZeroBookThenThrowIllegal() {
+    public void whenBorrowingZeroBookThenThrowIllegal() {
         //given
         Library tomLibrary = new Library();
         tomLibrary.addBook(new Book("Dzieci z Bullerbyn", "Astrid Lindgren", 4, "9788310104748"));
@@ -31,7 +31,7 @@ class LibraryBorrowABookTest {
     }
 
     @Test
-    void whenBorrowingNegativeNumberOfBookThenDoNotBorrow() {
+    public void whenBorrowingNegativeNumberOfBookThenDoNotBorrow() {
         //given
         Library tomLibrary = new Library();
         tomLibrary.addBook(new Book("Dzieci z Bullerbyn", "Astrid Lindgren", 4, "9788310104748"));

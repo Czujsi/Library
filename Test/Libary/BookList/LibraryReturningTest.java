@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryReturningTest {
     @Test
-    void ReturningABook() {
+    public void ReturningABook() {
         //given
         Library tomLibrary = new Library();
         tomLibrary.addBook(new Book("Dzieci z Bullerbyn", "Astrid Lindgren", 2, "9788310104748"));
